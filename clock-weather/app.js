@@ -77,7 +77,7 @@ window.addEventListener('load', ()=>{
         }else{
             ampm = 'AM';
         }
-
+        h = checkTime(h);
         //clocks.innerHTML =  h + ":" + m + ":" + s;
         clocks.innerHTML =  `${h}:${m}:${s} ${ampm}`;
         setTimeout(startTime, 1000);
